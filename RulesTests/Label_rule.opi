@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
+  <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
+  <macros>
+    <include_parent_macros>true</include_parent_macros>
+  </macros>
+  <wuid>5ab09114:1439720473f:-7bbd</wuid>
+  <boy_version>3.2.10.201312131746</boy_version>
+  <scripts />
+  <show_ruler>true</show_ruler>
+  <height>600</height>
+  <name></name>
+  <snap_to_geometry>true</snap_to_geometry>
+  <show_grid>true</show_grid>
+  <background_color>
+    <color red="240" green="240" blue="240" />
+  </background_color>
+  <foreground_color>
+    <color red="192" green="192" blue="192" />
+  </foreground_color>
+  <widget_type>Display</widget_type>
+  <show_close_button>true</show_close_button>
+  <width>800</width>
+  <rules />
+  <show_edit_range>true</show_edit_range>
+  <grid_space>6</grid_space>
+  <auto_scale_widgets>
+    <auto_scale_widgets>false</auto_scale_widgets>
+    <min_width>-1</min_width>
+    <min_height>-1</min_height>
+  </auto_scale_widgets>
+  <actions hook="false" hook_all="false" />
+  <y>-1</y>
+  <x>-1</x>
+  <widget typeId="org.csstudio.opibuilder.widgets.gauge" version="1.0.0">
+    <level_lo>20.0</level_lo>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <color_hihi>
+      <color red="255" green="0" blue="0" />
+    </color_hihi>
+    <show_lo>true</show_lo>
+    <scripts />
+    <height>138</height>
+    <major_tick_step_hint>50</major_tick_step_hint>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <background_color>
+      <color red="0" green="64" blue="128" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>Gauge</widget_type>
+    <show_minor_ticks>true</show_minor_ticks>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>138</width>
+    <show_lolo>true</show_lolo>
+    <border_style>0</border_style>
+    <effect_3d>true</effect_3d>
+    <pv_value />
+    <show_markers>true</show_markers>
+    <show_hi>true</show_hi>
+    <maximum>100.0</maximum>
+    <border_width>1</border_width>
+    <log_scale>false</log_scale>
+    <minimum>0.0</minimum>
+    <wuid>5ab09114:1439720473f:-79b1</wuid>
+    <show_hihi>true</show_hihi>
+    <scale_format></scale_format>
+    <show_scale>true</show_scale>
+    <color_lo>
+      <color red="255" green="255" blue="0" />
+    </color_lo>
+    <name>Gauge</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <pv_name>sim://ramp(1,100,1,0.1)</pv_name>
+    <color_hi>
+      <color red="255" green="255" blue="0" />
+    </color_hi>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <level_hi>80.0</level_hi>
+    <scale_font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </scale_font>
+    <level_hihi>90.0</level_hihi>
+    <ramp_gradient>true</ramp_gradient>
+    <color_lolo>
+      <color red="255" green="0" blue="0" />
+    </color_lolo>
+    <rules />
+    <value_label_format></value_label_format>
+    <transparent_background>true</transparent_background>
+    <needle_color>
+      <color red="255" green="0" blue="0" />
+    </needle_color>
+    <limits_from_pv>true</limits_from_pv>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <level_lolo>10.0</level_lolo>
+    <y>108</y>
+    <actions hook="false" hook_all="false" />
+    <x>72</x>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>5ab09114:1439720473f:-79b0</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>31</height>
+    <name>Label</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>true</transparent>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>High value Alarm</text>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>138</width>
+    <border_style>0</border_style>
+    <rules>
+      <rule name="High_value_visibility_Rule" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;80">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0&lt;80">
+          <value>false</value>
+        </exp>
+        <pv trig="true">sim://ramp(1,100,1,0.1)</pv>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>245</y>
+    <wrap_words>false</wrap_words>
+    <tooltip></tooltip>
+    <x>72</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>5ab09114:1439720473f:-79af</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>31</height>
+    <name>Label_1</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>true</transparent>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="255" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>Low value Alarm</text>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>138</width>
+    <border_style>0</border_style>
+    <rules>
+      <rule name="Low_value_visibility_Rule" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&lt;20">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0&gt;20">
+          <value>false</value>
+        </exp>
+        <pv trig="true">sim://ramp(1,100,1,0.1)</pv>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>270</y>
+    <wrap_words>false</wrap_words>
+    <tooltip></tooltip>
+    <x>72</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>5ab09114:1439720473f:-79ae</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>67</height>
+    <name>Label_8</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>Visibility rule on two labels, "High value Alarm" lable should only be visible if value &gt; 80
+"Low value Alarm" if value &lt; 20</text>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>241</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>24</y>
+    <wrap_words>true</wrap_words>
+    <tooltip></tooltip>
+    <x>20</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.gauge" version="1.0.0">
+    <level_lo>20.0</level_lo>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <color_hihi>
+      <color red="255" green="0" blue="0" />
+    </color_hihi>
+    <show_lo>true</show_lo>
+    <scripts />
+    <height>138</height>
+    <major_tick_step_hint>50</major_tick_step_hint>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <background_color>
+      <color red="0" green="64" blue="128" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>Gauge</widget_type>
+    <show_minor_ticks>true</show_minor_ticks>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>138</width>
+    <show_lolo>true</show_lolo>
+    <border_style>0</border_style>
+    <effect_3d>true</effect_3d>
+    <pv_value />
+    <show_markers>true</show_markers>
+    <show_hi>true</show_hi>
+    <maximum>100.0</maximum>
+    <border_width>1</border_width>
+    <log_scale>false</log_scale>
+    <minimum>0.0</minimum>
+    <wuid>5ab09114:1439720473f:-79ad</wuid>
+    <show_hihi>true</show_hihi>
+    <scale_format></scale_format>
+    <show_scale>true</show_scale>
+    <color_lo>
+      <color red="255" green="255" blue="0" />
+    </color_lo>
+    <name>Gauge_1</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <pv_name>sim://ramp(1,100,1,0.1)</pv_name>
+    <color_hi>
+      <color red="255" green="255" blue="0" />
+    </color_hi>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <level_hi>80.0</level_hi>
+    <scale_font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </scale_font>
+    <level_hihi>90.0</level_hihi>
+    <ramp_gradient>true</ramp_gradient>
+    <color_lolo>
+      <color red="255" green="0" blue="0" />
+    </color_lolo>
+    <rules />
+    <value_label_format></value_label_format>
+    <transparent_background>true</transparent_background>
+    <needle_color>
+      <color red="255" green="0" blue="0" />
+    </needle_color>
+    <limits_from_pv>true</limits_from_pv>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <level_lolo>10.0</level_lolo>
+    <y>108</y>
+    <actions hook="false" hook_all="false" />
+    <x>336</x>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>5ab09114:1439720473f:-79ac</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>31</height>
+    <name>Label_9</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>true</transparent>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text></text>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>138</width>
+    <border_style>0</border_style>
+    <rules>
+      <rule name="text_Rule" prop_id="text" out_exp="false">
+        <exp bool_exp="pv0&gt;80">
+          <value>High Value Alarm</value>
+        </exp>
+        <exp bool_exp="pv0 &lt;20">
+          <value>Low Value Alarm</value>
+        </exp>
+        <pv trig="true">sim://ramp(1,100,1,0.1)</pv>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>245</y>
+    <wrap_words>false</wrap_words>
+    <tooltip></tooltip>
+    <x>336</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>5ab09114:1439720473f:-79ab</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>67</height>
+    <name>Label_11</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>Text rule on label, change the value to , "High value Alarm" when value &gt; 80, "Low value Alarm" when value &lt; 20 and empty if there is no alarm</text>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>241</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>24</y>
+    <wrap_words>true</wrap_words>
+    <tooltip></tooltip>
+    <x>284</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.gauge" version="1.0.0">
+    <level_lo>20.0</level_lo>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <color_hihi>
+      <color red="255" green="0" blue="0" />
+    </color_hihi>
+    <show_lo>true</show_lo>
+    <scripts />
+    <height>138</height>
+    <major_tick_step_hint>50</major_tick_step_hint>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <background_color>
+      <color red="0" green="64" blue="128" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>Gauge</widget_type>
+    <show_minor_ticks>true</show_minor_ticks>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>138</width>
+    <show_lolo>true</show_lolo>
+    <border_style>0</border_style>
+    <effect_3d>true</effect_3d>
+    <pv_value />
+    <show_markers>true</show_markers>
+    <show_hi>true</show_hi>
+    <maximum>100.0</maximum>
+    <border_width>1</border_width>
+    <log_scale>false</log_scale>
+    <minimum>0.0</minimum>
+    <wuid>5ab09114:1439720473f:-781d</wuid>
+    <show_hihi>true</show_hihi>
+    <scale_format></scale_format>
+    <show_scale>true</show_scale>
+    <color_lo>
+      <color red="255" green="255" blue="0" />
+    </color_lo>
+    <name>Gauge_2</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <pv_name>sim://ramp(1,100,1,0.1)</pv_name>
+    <color_hi>
+      <color red="255" green="255" blue="0" />
+    </color_hi>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <level_hi>80.0</level_hi>
+    <scale_font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </scale_font>
+    <level_hihi>90.0</level_hihi>
+    <ramp_gradient>true</ramp_gradient>
+    <color_lolo>
+      <color red="255" green="0" blue="0" />
+    </color_lolo>
+    <rules />
+    <value_label_format></value_label_format>
+    <transparent_background>true</transparent_background>
+    <needle_color>
+      <color red="255" green="0" blue="0" />
+    </needle_color>
+    <limits_from_pv>true</limits_from_pv>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <level_lolo>10.0</level_lolo>
+    <y>108</y>
+    <actions hook="false" hook_all="false" />
+    <x>586</x>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>5ab09114:1439720473f:-781c</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>31</height>
+    <name>Label_12</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>true</transparent>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>Alarm Test</text>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>138</width>
+    <border_style>1</border_style>
+    <rules>
+      <rule name="Border_Color_Rule" prop_id="border_color" out_exp="false">
+        <exp bool_exp="pv0&gt;90 || pv0&lt;10">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <exp bool_exp="(pv0&gt;80 &amp;&amp; pv0&lt;90) || (pv0&gt;10 &amp;&amp; pv0&lt;20) ">
+          <value>
+            <color name="Minor" red="255" green="128" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">sim://ramp(1,100,1,0.1)</pv>
+      </rule>
+      <rule name="Border_Width_Rule" prop_id="border_width" out_exp="false">
+        <exp bool_exp="pv0&gt;80 || pv0&lt;20">
+          <value>3</value>
+        </exp>
+        <pv trig="true">sim://ramp(1,100,1,0.1)</pv>
+      </rule>
+      <rule name="Font_Rule" prop_id="font" out_exp="false">
+        <exp bool_exp="pv0&gt;90 || pv0&lt;10">
+          <value>
+            <opifont.name fontName="Sans" height="10" style="1">Default Bold</opifont.name>
+          </value>
+        </exp>
+        <pv trig="true">sim://ramp(1,100,1,0.1)</pv>
+      </rule>
+    </rules>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="255" green="255" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>245</y>
+    <wrap_words>false</wrap_words>
+    <tooltip></tooltip>
+    <x>586</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>5ab09114:1439720473f:-781b</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>67</height>
+    <name>Label_13</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>Duplicate the Alarm border color behaviour with a border color rule, and the border width rule, for HIHI and LOLO also bold the text</text>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>241</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>24</y>
+    <wrap_words>true</wrap_words>
+    <tooltip></tooltip>
+    <x>534</x>
+  </widget>
+</display>
