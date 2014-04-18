@@ -229,7 +229,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <format_type>1</format_type>
-    <precision_from_pv>true</precision_from_pv>
+    <precision_from_pv>false</precision_from_pv>
     <transparent>false</transparent>
     <pv_name>loc://t2(123.4516)</pv_name>
     <background_color>
