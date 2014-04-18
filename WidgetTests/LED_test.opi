@@ -5,7 +5,7 @@
     <include_parent_macros>true</include_parent_macros>
   </macros>
   <wuid>5ab09114:14391948b65:-7be4</wuid>
-  <boy_version>3.2.10.qualifier</boy_version>
+  <boy_version>3.2.16.201404011455</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
   <height>600</height>
@@ -35,17 +35,33 @@
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
+    <square_led>false</square_led>
+    <scripts />
+    <height>31</height>
+    <data_type>0</data_type>
+    <show_boolean_label>false</show_boolean_label>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <off_label>OFF</off_label>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>LED</widget_type>
+    <font>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>31</width>
+    <border_style>0</border_style>
+    <effect_3d>true</effect_3d>
+    <pv_value />
+    <bit>-1</bit>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
     <wuid>5ab09114:14391948b65:-7a20</wuid>
-    <scripts />
-    <square_led>false</square_led>
     <on_color>
       <color red="0" green="255" blue="0" />
     </on_color>
-    <height>31</height>
-    <data_type>0</data_type>
     <name>LED_1</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <show_boolean_label>false</show_boolean_label>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -55,50 +71,50 @@
       <color red="0" green="100" blue="0" />
     </off_color>
     <pv_name>sim://flipflop(1)</pv_name>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <off_label>OFF</off_label>
-    <widget_type>LED</widget_type>
-    <enabled>true</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <width>31</width>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
     <rules />
-    <pv_value />
-    <bit>-1</bit>
-    <border_width>1</border_width>
-    <on_label>ON</on_label>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <actions hook="false" hook_all="false" />
     <y>78</y>
+    <actions hook="false" hook_all="false" />
+    <x>504</x>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>504</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <wuid>5ab09114:14391948b65:-7a16</wuid>
-    <scripts />
     <square_led>false</square_led>
+    <scripts />
+    <height>31</height>
+    <data_type>0</data_type>
+    <show_boolean_label>false</show_boolean_label>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <off_label>OFF</off_label>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>LED</widget_type>
+    <font>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>31</width>
+    <border_style>0</border_style>
+    <effect_3d>true</effect_3d>
+    <pv_value />
+    <bit>-1</bit>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <wuid>5ab09114:14391948b65:-7a16</wuid>
     <on_color>
       <color red="0" green="255" blue="0" />
     </on_color>
-    <height>31</height>
-    <data_type>0</data_type>
     <name>LED_1</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <show_boolean_label>false</show_boolean_label>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -108,50 +124,50 @@ $(pv_value)</tooltip>
       <color red="0" green="100" blue="0" />
     </off_color>
     <pv_name>sim://flipflop(0.5)</pv_name>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <off_label>OFF</off_label>
-    <widget_type>LED</widget_type>
-    <enabled>true</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <width>31</width>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
     <rules />
-    <pv_value />
-    <bit>-1</bit>
-    <border_width>1</border_width>
-    <on_label>ON</on_label>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <actions hook="false" hook_all="false" />
     <y>39</y>
+    <actions hook="false" hook_all="false" />
+    <x>504</x>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>504</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <wuid>5ab09114:14391948b65:-7a0f</wuid>
-    <scripts />
     <square_led>false</square_led>
+    <scripts />
+    <height>31</height>
+    <data_type>0</data_type>
+    <show_boolean_label>false</show_boolean_label>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <off_label>OFF</off_label>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>LED</widget_type>
+    <font>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>31</width>
+    <border_style>0</border_style>
+    <effect_3d>true</effect_3d>
+    <pv_value />
+    <bit>-1</bit>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <wuid>5ab09114:14391948b65:-7a0f</wuid>
     <on_color>
       <color name="Major" red="255" green="0" blue="0" />
     </on_color>
-    <height>31</height>
-    <data_type>0</data_type>
     <name>LED_2</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <show_boolean_label>false</show_boolean_label>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -161,50 +177,50 @@ $(pv_value)</tooltip>
       <color red="0" green="100" blue="0" />
     </off_color>
     <pv_name>sim://flipflop(1)</pv_name>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <off_label>OFF</off_label>
-    <widget_type>LED</widget_type>
-    <enabled>true</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <width>31</width>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
     <rules />
-    <pv_value />
-    <bit>-1</bit>
-    <border_width>1</border_width>
-    <on_label>ON</on_label>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <actions hook="false" hook_all="false" />
     <y>153</y>
+    <actions hook="false" hook_all="false" />
+    <x>504</x>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>504</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <wuid>5ab09114:14391948b65:-7a08</wuid>
-    <scripts />
     <square_led>false</square_led>
+    <scripts />
+    <height>31</height>
+    <data_type>0</data_type>
+    <show_boolean_label>false</show_boolean_label>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <off_label>OFF</off_label>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>LED</widget_type>
+    <font>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>31</width>
+    <border_style>0</border_style>
+    <effect_3d>true</effect_3d>
+    <pv_value />
+    <bit>-1</bit>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <wuid>5ab09114:14391948b65:-7a08</wuid>
     <on_color>
       <color name="Major" red="255" green="0" blue="0" />
     </on_color>
-    <height>31</height>
-    <data_type>0</data_type>
     <name>LED_3</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <show_boolean_label>false</show_boolean_label>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -214,35 +230,19 @@ $(pv_value)</tooltip>
       <color red="0" green="100" blue="0" />
     </off_color>
     <pv_name>sim://flipflop(0.5)</pv_name>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <off_label>OFF</off_label>
-    <widget_type>LED</widget_type>
-    <enabled>true</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <width>31</width>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
     <rules />
-    <pv_value />
-    <bit>-1</bit>
-    <border_width>1</border_width>
-    <on_label>ON</on_label>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <actions hook="false" hook_all="false" />
     <y>120</y>
+    <actions hook="false" hook_all="false" />
+    <x>504</x>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>504</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -269,7 +269,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>using a simulated flipflop pv with a update rate of 1Hz, green for on</text>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
     </font>
     <width>463</width>
     <border_style>0</border_style>
@@ -310,7 +310,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>using a simulated flipflop pv with a update rate of 2Hz, green for on</text>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
     </font>
     <width>463</width>
     <border_style>0</border_style>
@@ -351,7 +351,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>using a simulated flipflop pv with a update rate of 1Hz, red for on</text>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
     </font>
     <width>463</width>
     <border_style>0</border_style>
@@ -392,7 +392,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>using a simulated flipflop pv with a update rate of 2Hz, red for on</text>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
     </font>
     <width>463</width>
     <border_style>0</border_style>
@@ -411,17 +411,33 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <wuid>5ab09114:14391948b65:-7883</wuid>
-    <scripts />
     <square_led>true</square_led>
+    <scripts />
+    <height>31</height>
+    <data_type>0</data_type>
+    <show_boolean_label>false</show_boolean_label>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <off_label>OFF</off_label>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>LED</widget_type>
+    <font>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>31</width>
+    <border_style>0</border_style>
+    <effect_3d>true</effect_3d>
+    <pv_value />
+    <bit>-1</bit>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <wuid>5ab09114:14391948b65:-7883</wuid>
     <on_color>
       <color red="0" green="255" blue="0" />
     </on_color>
-    <height>31</height>
-    <data_type>0</data_type>
     <name>LED_4</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <show_boolean_label>false</show_boolean_label>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -431,35 +447,19 @@ $(pv_value)</tooltip>
       <color red="0" green="100" blue="0" />
     </off_color>
     <pv_name>sim://flipflop(1)</pv_name>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <off_label>OFF</off_label>
-    <widget_type>LED</widget_type>
-    <enabled>true</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <width>31</width>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
     <rules />
-    <pv_value />
-    <bit>-1</bit>
-    <border_width>1</border_width>
-    <on_label>ON</on_label>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <actions hook="false" hook_all="false" />
     <y>195</y>
+    <actions hook="false" hook_all="false" />
+    <x>504</x>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>504</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -486,7 +486,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>square LED using a simulated flipflop pv with a update rate of 1Hz, green for on</text>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
     </font>
     <width>463</width>
     <border_style>0</border_style>
@@ -505,17 +505,33 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <wuid>5ab09114:14391948b65:-785d</wuid>
-    <scripts />
     <square_led>true</square_led>
+    <scripts />
+    <height>31</height>
+    <data_type>0</data_type>
+    <show_boolean_label>true</show_boolean_label>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <off_label>OFF</off_label>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>LED</widget_type>
+    <font>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>31</width>
+    <border_style>0</border_style>
+    <effect_3d>true</effect_3d>
+    <pv_value />
+    <bit>-1</bit>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <wuid>5ab09114:14391948b65:-785d</wuid>
     <on_color>
       <color red="0" green="255" blue="0" />
     </on_color>
-    <height>31</height>
-    <data_type>0</data_type>
     <name>LED_5</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <show_boolean_label>true</show_boolean_label>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -525,35 +541,19 @@ $(pv_value)</tooltip>
       <color red="0" green="100" blue="0" />
     </off_color>
     <pv_name>sim://flipflop(1)</pv_name>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <off_label>OFF</off_label>
-    <widget_type>LED</widget_type>
-    <enabled>true</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <width>31</width>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
     <rules />
-    <pv_value />
-    <bit>-1</bit>
-    <border_width>1</border_width>
-    <on_label>ON</on_label>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <actions hook="false" hook_all="false" />
     <y>243</y>
+    <actions hook="false" hook_all="false" />
+    <x>504</x>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>504</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -580,7 +580,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>square LED with boolean label using a simulated flipflop pv with a update rate of 1Hz, green for on</text>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
     </font>
     <width>463</width>
     <border_style>0</border_style>
@@ -596,54 +596,337 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <x>12</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ImageBoolIndicator" version="1.0.0">
-    <border_alarm_sensitive>true</border_alarm_sensitive>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
-    <wuid>5ab09114:14391948b65:-7836</wuid>
-    <auto_size>true</auto_size>
-    <boolean_label_position>0</boolean_label_position>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>76743105:1454c71703a:-7fd2</wuid>
+    <auto_size>false</auto_size>
     <scripts />
-    <height>100</height>
-    <data_type>0</data_type>
-    <name>Image Boolean Indicator</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <show_boolean_label>false</show_boolean_label>
-    <stretch_to_fit>false</stretch_to_fit>
+    <height>37</height>
+    <name>Label_6</name>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name></pv_name>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
     <background_color>
-      <color red="240" green="240" blue="240" />
+      <color red="255" green="255" blue="255" />
     </background_color>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <off_label>OFF</off_label>
-    <widget_type>Image Boolean Indicator</widget_type>
+    <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <text>three state LED using simulated ramp from 0 to 2 with an update rate of 1Hz, cycle through green, orange, red</text>
     <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
     </font>
-    <width>100</width>
+    <width>463</width>
     <border_style>0</border_style>
     <rules />
-    <pv_value />
-    <bit>-1</bit>
     <border_width>1</border_width>
-    <on_label>ON</on_label>
-    <off_image></off_image>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>339</y>
-    <on_image></on_image>
+    <y>294</y>
+    <wrap_words>true</wrap_words>
+    <tooltip></tooltip>
+    <x>12</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>76743105:1454c71703a:-7f33</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>61</height>
+    <name>Label_7</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>three state LED demonstrating fallback color and label using simulated ramp from 0 to 3 with an update rate of 1Hz, cycle through grey, green, orange, red with labels "ERR", "S1", "S2", "S3" respectively</text>
+    <font>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>463</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>348</y>
+    <wrap_words>true</wrap_words>
+    <tooltip></tooltip>
+    <x>12</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <square_led>false</square_led>
+    <scripts />
+    <height>28</height>
+    <data_type>0</data_type>
+    <show_boolean_label>false</show_boolean_label>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <state_count>3</state_count>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>LED</widget_type>
+    <font>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>28</width>
+    <border_style>0</border_style>
+    <effect_3d>true</effect_3d>
+    <pv_value />
+    <bit>-1</bit>
+    <state_label_0>S01</state_label_0>
+    <state_color_0>
+      <color red="0" green="255" blue="0" />
+    </state_color_0>
+    <state_color_1>
+      <color red="255" green="128" blue="0" />
+    </state_color_1>
+    <border_width>1</border_width>
+    <state_color_2>
+      <color red="255" green="0" blue="0" />
+    </state_color_2>
+    <state_label_1>S02</state_label_1>
+    <state_label_2>S03</state_label_2>
+    <wuid>-6dd63b0e:1454cd9eb0c:-7fee</wuid>
+    <state_label_fallback>ERR</state_label_fallback>
+    <name>LED</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <pv_name>sim://ramp(0,2,1,1)</pv_name>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <state_color_fallback>
+      <color red="100" green="100" blue="100" />
+    </state_color_fallback>
+    <rules />
+    <state_value_0>0.0</state_value_0>
+    <state_value_1>1.0</state_value_1>
+    <state_value_2>2.0</state_value_2>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>299</y>
+    <actions hook="false" hook_all="false" />
+    <x>506</x>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>580</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <square_led>false</square_led>
+    <scripts />
+    <height>29</height>
+    <data_type>0</data_type>
+    <show_boolean_label>true</show_boolean_label>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <state_count>3</state_count>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>LED</widget_type>
+    <font>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>29</width>
+    <border_style>0</border_style>
+    <effect_3d>true</effect_3d>
+    <pv_value />
+    <bit>-1</bit>
+    <state_label_0>S1</state_label_0>
+    <state_color_0>
+      <color red="0" green="255" blue="0" />
+    </state_color_0>
+    <state_color_1>
+      <color red="255" green="128" blue="0" />
+    </state_color_1>
+    <border_width>1</border_width>
+    <state_color_2>
+      <color red="255" green="0" blue="0" />
+    </state_color_2>
+    <state_label_1>S2</state_label_1>
+    <state_label_2>S3</state_label_2>
+    <wuid>-6dd63b0e:1454cd9eb0c:-7fcb</wuid>
+    <state_label_fallback>ERR</state_label_fallback>
+    <name>LED_7</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <pv_name>sim://ramp(0,3,1,1)</pv_name>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <state_color_fallback>
+      <color red="100" green="100" blue="100" />
+    </state_color_fallback>
+    <rules />
+    <state_value_0>1.0</state_value_0>
+    <state_value_1>2.0</state_value_1>
+    <state_value_2>3.0</state_value_2>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>364</y>
+    <actions hook="false" hook_all="false" />
+    <x>505</x>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>-6dd63b0e:1454cd9eb0c:-7f8c</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>61</height>
+    <name>Label_8</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>six state square LED using simulated ramp from 1 to 6 with an update rate of 2Hz, cycle through green, yellow, orange, red, blue, violet with labels "G", "Y", "O", "R", "B", "V" respectively</text>
+    <font>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>463</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>426</y>
+    <wrap_words>true</wrap_words>
+    <tooltip></tooltip>
+    <x>12</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <square_led>true</square_led>
+    <scripts />
+    <height>29</height>
+    <data_type>0</data_type>
+    <show_boolean_label>true</show_boolean_label>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <state_count>6</state_count>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>LED</widget_type>
+    <font>
+      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>31</width>
+    <border_style>0</border_style>
+    <effect_3d>true</effect_3d>
+    <pv_value />
+    <bit>-1</bit>
+    <state_label_0>G</state_label_0>
+    <state_color_0>
+      <color red="0" green="255" blue="0" />
+    </state_color_0>
+    <state_color_1>
+      <color red="255" green="255" blue="0" />
+    </state_color_1>
+    <border_width>1</border_width>
+    <state_color_4>
+      <color red="0" green="0" blue="255" />
+    </state_color_4>
+    <state_label_5>V</state_label_5>
+    <state_color_5>
+      <color red="255" green="0" blue="255" />
+    </state_color_5>
+    <state_color_2>
+      <color red="255" green="128" blue="0" />
+    </state_color_2>
+    <state_color_3>
+      <color red="255" green="0" blue="0" />
+    </state_color_3>
+    <state_label_1>Y</state_label_1>
+    <state_label_2>O</state_label_2>
+    <state_label_3>R</state_label_3>
+    <state_label_4>B</state_label_4>
+    <wuid>-6dd63b0e:1454cd9eb0c:-7f85</wuid>
+    <state_label_fallback>ERR</state_label_fallback>
+    <name>LED_8</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <pv_name>sim://ramp(1,6,1,0.5)</pv_name>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <state_color_fallback>
+      <color red="100" green="100" blue="100" />
+    </state_color_fallback>
+    <rules />
+    <state_value_4>5.0</state_value_4>
+    <state_value_5>6.0</state_value_5>
+    <state_value_0>1.0</state_value_0>
+    <state_value_1>2.0</state_value_1>
+    <state_value_2>3.0</state_value_2>
+    <state_value_3>4.0</state_value_3>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>442</y>
+    <actions hook="false" hook_all="false" />
+    <x>504</x>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
   </widget>
 </display>
