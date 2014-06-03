@@ -5,10 +5,10 @@
     <include_parent_macros>true</include_parent_macros>
   </macros>
   <wuid>11ff899c:13f52d757cc:-73d6</wuid>
-  <boy_version>3.2.6.qualifier</boy_version>
+  <boy_version>3.2.18.qualifier</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
-  <height>600</height>
+  <height>720</height>
   <name></name>
   <snap_to_geometry>true</snap_to_geometry>
   <show_grid>true</show_grid>
@@ -20,7 +20,7 @@
   </foreground_color>
   <widget_type>Display</widget_type>
   <show_close_button>true</show_close_button>
-  <width>800</width>
+  <width>1280</width>
   <rules />
   <show_edit_range>true</show_edit_range>
   <grid_space>6</grid_space>
@@ -47,7 +47,7 @@
     <height>181</height>
     <anti_alias>true</anti_alias>
     <corner_height>16</corner_height>
-    <name>Rounded Rectangle_1</name>
+    <name>Example background</name>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alpha>255</alpha>
     <scale_options>
@@ -106,7 +106,7 @@ $(pv_value)</tooltip>
     <height>73</height>
     <anti_alias>true</anti_alias>
     <corner_height>16</corner_height>
-    <name>Rounded Rectangle</name>
+    <name>Title background</name>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alpha>255</alpha>
     <scale_options>
@@ -132,7 +132,7 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
-    <width>787</width>
+    <width>1267</width>
     <line_style>0</line_style>
     <border_style>0</border_style>
     <rules />
@@ -157,7 +157,7 @@ $(pv_value)</tooltip>
     <auto_size>false</auto_size>
     <scripts />
     <height>61</height>
-    <name>Label</name>
+    <name>Title</name>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -173,11 +173,11 @@ $(pv_value)</tooltip>
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>Natural join for VTables</text>
+    <text>Table - natural join</text>
     <font>
       <opifont.name fontName="Segoe UI" height="17" style="1">Header 1</opifont.name>
     </font>
-    <width>775</width>
+    <width>1249</width>
     <border_style>0</border_style>
     <rules />
     <border_width>1</border_width>
@@ -191,19 +191,61 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <x>12</x>
   </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>0</vertical_alignment>
+    <wuid>6c74ca29:13f53005f1e:101</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>55</height>
+    <name>Example title</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>true</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>Correlate values and inventory information</text>
+    <font>
+      <opifont.name fontName="Segoe UI" height="11" style="1">Header 3</opifont.name>
+    </font>
+    <width>301</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>0</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>102</y>
+    <wrap_words>true</wrap_words>
+    <tooltip></tooltip>
+    <x>12</x>
+  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.VTableDisplay" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <wuid>6c74ca29:13f52f683ab:-7e1a</wuid>
+    <wuid>-62f27891:14661f4fdd9:-7e96</wuid>
     <scripts />
-    <height>127</height>
+    <pv_result_prefix></pv_result_prefix>
+    <height>331</height>
     <name>VTable Display</name>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name>file:///C:/Users/carcassi/Desktop/TempJunk/test.csv</pv_name>
+    <pv_name>=tableOf(column("Device", arrayOf("AX-1","AX-2","AX-3","AX-4","AX-5","AX-6","AX-7","AX-8")), column("Value", arrayOf('sim://noise(0,1,1)','sim://noise(-0.1,0.9,1)','sim://noise(0.1,1.1,1)','sim://noise(0.1,1,1)','sim://noise(0.4,1.2,1)','sim://noise(0.1,0.9,1)','sim://noise(9845,10010,1)','sim://noise(0.4,0.6,1)')))</pv_name>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -222,51 +264,47 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>102</y>
+    <y>96</y>
     <actions hook="false" hook_all="false" />
     <x>324</x>
     <tooltip></tooltip>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.VTableDisplay" version="1.0.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <vertical_alignment>0</vertical_alignment>
-    <wuid>6c74ca29:13f53005f1e:101</wuid>
-    <auto_size>false</auto_size>
+    <wuid>-62f27891:14661f4fdd9:-7e95</wuid>
     <scripts />
-    <height>55</height>
-    <name>Label_1</name>
+    <pv_result_prefix></pv_result_prefix>
+    <height>331</height>
+    <name>VTable Display_1</name>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <transparent>true</transparent>
-    <show_scrollbar>false</show_scrollbar>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
+    <pv_name>${DLOC}/deviceInventory.csv</pv_name>
     <foreground_color>
-      <color red="0" green="0" blue="0" />
+      <color red="192" green="192" blue="192" />
     </foreground_color>
-    <widget_type>Label</widget_type>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
     <enabled>true</enabled>
-    <text>Example 1: shows two tables and the join between them.</text>
+    <widget_type>VTable Display</widget_type>
     <font>
-      <opifont.name fontName="Segoe UI" height="11" style="1">Header 3</opifont.name>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
-    <width>301</width>
+    <width>457</width>
     <border_style>0</border_style>
     <rules />
     <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <horizontal_alignment>0</horizontal_alignment>
+    <y>96</y>
     <actions hook="false" hook_all="false" />
-    <y>102</y>
-    <wrap_words>true</wrap_words>
+    <x>804</x>
     <tooltip></tooltip>
-    <x>12</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -275,7 +313,7 @@ $(pv_value)</tooltip>
     <auto_size>false</auto_size>
     <scripts />
     <height>169</height>
-    <name>Label_2</name>
+    <name>Example description</name>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -291,7 +329,8 @@ $(pv_value)</tooltip>
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>The first two tables are read from file. The third table is the natural join between them. The natural join makes sure that column with equal name have the same value.</text>
+    <text>On the left, we see the read values taken from deviceValues.csv. On the right, we have the device inventory information taken from deviceInventory.csv. At the bottom, we see the join of the two, and note that the faulty device is associated with a particular vendor.&#xD;
+</text>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
@@ -312,52 +351,17 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.VTableDisplay" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <wuid>-c8d19b5:13f814bfe54:-7fcf</wuid>
+    <wuid>-62f27891:14661f4fdd9:-7e94</wuid>
     <scripts />
-    <height>127</height>
-    <name>VTable Display_1</name>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <pv_name>file:///C:/Users/carcassi/Desktop/TempJunk/test2.csv</pv_name>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <enabled>true</enabled>
-    <widget_type>VTable Display</widget_type>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <width>457</width>
-    <border_style>0</border_style>
-    <rules />
-    <border_width>1</border_width>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <y>240</y>
-    <actions hook="false" hook_all="false" />
-    <x>324</x>
-    <tooltip></tooltip>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.VTableDisplay" version="1.0.0">
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <visible>true</visible>
-    <wuid>-c8d19b5:13f814bfe54:-7fb1</wuid>
-    <scripts />
-    <height>127</height>
+    <pv_result_prefix></pv_result_prefix>
+    <height>247</height>
     <name>VTable Display_2</name>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name>=join('file:///C:/Users/carcassi/Desktop/TempJunk/test.csv', 'file:///C:/Users/carcassi/Desktop/TempJunk/test2.csv')</pv_name>
+    <pv_name>=join(tableOf(column("Device", arrayOf("AX-1","AX-2","AX-3","AX-4","AX-5","AX-6","AX-7","AX-8")), column("Value", arrayOf('sim://noise(0,1,1)','sim://noise(-0.1,0.9,1)','sim://noise(0.1,1.1,1)','sim://noise(0.1,1,1)','sim://noise(0.4,1.2,1)','sim://noise(0.1,0.9,1)','sim://noise(9845,10010,1)','sim://noise(0.4,0.6,1)'))), '${DLOC}/deviceInventory.csv')</pv_name>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -369,14 +373,14 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
-    <width>769</width>
+    <width>1249</width>
     <border_style>0</border_style>
     <rules />
     <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>378</y>
+    <y>438</y>
     <actions hook="false" hook_all="false" />
     <x>12</x>
     <tooltip></tooltip>
