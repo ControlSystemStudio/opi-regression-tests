@@ -5,7 +5,7 @@
     <include_parent_macros>true</include_parent_macros>
   </macros>
   <wuid>11ff899c:13f52d757cc:-73d6</wuid>
-  <boy_version>3.2.6.qualifier</boy_version>
+  <boy_version>3.2.18.qualifier</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
   <height>720</height>
@@ -150,6 +150,43 @@ $(pv_value)</tooltip>
     <x>6</x>
     <gradient>true</gradient>
   </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.VTableDisplay" version="1.0.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>6c74ca29:13f52f683ab:-7e1a</wuid>
+    <scripts />
+    <pv_result_prefix></pv_result_prefix>
+    <height>247</height>
+    <name>VTable Display</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name>=tableOf(column("A", arrayOf(1,2,3,4,5)), column("B", arrayOf(3.4,2.5,8.6,7.4,5.9)), column("C", arrayOf(1,4,3,8,3)), column("D", arrayOf(3.1,-7.6,-2.2,0.5,4.1)))</pv_name>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <enabled>true</enabled>
+    <widget_type>VTable Display</widget_type>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+    <width>937</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>444</y>
+    <actions hook="false" hook_all="false" />
+    <x>324</x>
+    <tooltip></tooltip>
+  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
     <vertical_alignment>1</vertical_alignment>
@@ -173,7 +210,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>Scatter Graph - Dynamic axis</text>
+    <text>Scatter graph - interactive plot</text>
     <font>
       <opifont.name fontName="Segoe UI" height="17" style="1">Header 1</opifont.name>
     </font>
@@ -190,41 +227,6 @@ $(pv_value)</tooltip>
     <wrap_words>true</wrap_words>
     <tooltip></tooltip>
     <x>12</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.VTableDisplay" version="1.0.0">
-    <enabled>true</enabled>
-    <widget_type>VTable Display</widget_type>
-    <visible>true</visible>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <width>937</width>
-    <border_style>0</border_style>
-    <wuid>6c74ca29:13f52f683ab:-7e1a</wuid>
-    <rules />
-    <scripts />
-    <height>247</height>
-    <border_width>1</border_width>
-    <name>VTable Display</name>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <pv_name>=tableOf(column("A", arrayOf(1,2,3,4,5)), column("B", arrayOf(3.4,2.5,8.6,7.4,5.9)), column("C", arrayOf(100,400,300,800,300)), column("D", arrayOf(3.1,-7.6,-2.2,0.5,4.1)))</pv_name>
-    <y>444</y>
-    <actions hook="false" hook_all="false" />
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <x>324</x>
-    <tooltip></tooltip>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -249,7 +251,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>Example 1: scatter graph where the axis are user selected.</text>
+    <text>Scatter graph from a formula with selectable axis</text>
     <font>
       <opifont.name fontName="Segoe UI" height="11" style="1">Header 3</opifont.name>
     </font>
@@ -290,7 +292,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>On the right we have a table constructed by using 3 different waveform. On the bottom we have a bubble graph constructed from it. You can see the uniform noise distribution on the Y axis and the gaussian peek scrolling right to left for the bubble size.</text>
+    <text>As data, we use a formula to assemble a set of values into a table, which is shown below. The axis of the scatter plot can be selected by entering the column name in the axis fields below.</text>
     <font>
       <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
@@ -335,7 +337,7 @@ $(pv_value)</tooltip>
     </font>
     <width>937</width>
     <border_style>0</border_style>
-    <data_formula>=tableOf(column("A", arrayOf(1,2,3,4,5)), column("B", arrayOf(3.4,2.5,8.6,7.4,5.9)), column("C", arrayOf(100,400,300,800,300)), column("D", arrayOf(3.1,-7.6,-2.2,0.5,4.1)))</data_formula>
+    <data_formula>=tableOf(column("A", arrayOf(1,2,3,4,5)), column("B", arrayOf(3.4,2.5,8.6,7.4,5.9)), column("C", arrayOf(1,4,3,8,3)), column("D", arrayOf(3.1,-7.6,-2.2,0.5,4.1)))</data_formula>
     <rules />
     <configurable>false</configurable>
     <border_width>1</border_width>
@@ -409,9 +411,9 @@ $(pv_value)</tooltip>
     <width>211</width>
     <border_style>3</border_style>
     <pv_value />
-    <maximum>Infinity</maximum>
+    <maximum>1.7976931348623157E308</maximum>
     <border_width>1</border_width>
-    <minimum>-Infinity</minimum>
+    <minimum>-1.7976931348623157E308</minimum>
     <show_units>true</show_units>
     <wuid>-21a2ab93:13f8b7489fe:40b3</wuid>
     <rotation_angle>0.0</rotation_angle>
