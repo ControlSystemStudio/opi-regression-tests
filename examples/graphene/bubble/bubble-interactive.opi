@@ -276,7 +276,13 @@ The graph does not resize well when changing columns: this is a known issue.</te
     <x>18</x>
   </widget>
   <widget typeId="org.csstudio.graphene.opiwidgets.BubbleGraph2D" version="1.0.0">
+    <y_axis_range>
+      <axisRange type="data" />
+    </y_axis_range>
     <visible>true</visible>
+    <x_axis_range>
+      <axisRange type="data" />
+    </x_axis_range>
     <wuid>-1eae4534:1464874f570:-7594</wuid>
     <x_formula>loc://${DID}_x</x_formula>
     <scripts />
@@ -290,7 +296,7 @@ The graph does not resize well when changing columns: this is a known issue.</te
     </scale_options>
     <selection_value_pv>loc://${DID}_selection</selection_value_pv>
     <y_formula>loc://${DID}_y</y_formula>
-    <show_axis>true</show_axis>
+    <show_axis>false</show_axis>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -308,7 +314,7 @@ The graph does not resize well when changing columns: this is a known issue.</te
     <data_formula>${DLOC}/elements.csv</data_formula>
     <rules />
     <highlight_selection_value>true</highlight_selection_value>
-    <configurable>false</configurable>
+    <configurable>true</configurable>
     <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
