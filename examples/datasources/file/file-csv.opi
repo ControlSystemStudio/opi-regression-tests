@@ -366,7 +366,13 @@ $(pv_value)</tooltip>
     <x>750</x>
   </widget>
   <widget typeId="org.csstudio.graphene.opiwidgets.ScatterGraph2D" version="1.0.0">
+    <y_axis_range>
+      <axisRange type="data" />
+    </y_axis_range>
     <visible>true</visible>
+    <x_axis_range>
+      <axisRange type="data" />
+    </x_axis_range>
     <wuid>-1eae4534:1464874f570:-775b</wuid>
     <x_formula>="A"</x_formula>
     <scripts />
@@ -378,7 +384,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <y_formula>="C"</y_formula>
-    <show_axis>true</show_axis>
+    <show_axis>false</show_axis>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
