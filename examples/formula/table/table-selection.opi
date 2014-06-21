@@ -287,7 +287,7 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name>sim://table</pv_name>
+    <pv_name>=pvs(arrayOf("sim://noise","sim://sine","sim://ramp"))</pv_name>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -368,7 +368,7 @@ $(pv_value)</tooltip>
     <format_type>0</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>false</transparent>
-    <pv_name>=columnOf('loc://${DID}_selection', "Text")</pv_name>
+    <pv_name>=columnOf('loc://${DID}_selection', "Name")</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -550,7 +550,7 @@ $(pv_value)</tooltip>
     <format_type>0</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>false</transparent>
-    <pv_name>=columnOf('loc://${DID}_selection', "Index")</pv_name>
+    <pv_name>=columnOf('loc://${DID}_selection', "Severity")</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
