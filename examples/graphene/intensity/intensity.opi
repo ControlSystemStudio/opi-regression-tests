@@ -276,7 +276,13 @@ The intensity graph skips the value that are not displayed, so the load is expec
     <x>12</x>
   </widget>
   <widget typeId="org.csstudio.graphene.opiwidgets.IntensityGraph2D" version="1.0.0">
+    <y_axis_range>
+      <axisRange type="display" />
+    </y_axis_range>
     <visible>true</visible>
+    <x_axis_range>
+      <axisRange type="display" />
+    </x_axis_range>
     <wuid>-667c08fc:146630ae92d:-7d46</wuid>
     <x_formula></x_formula>
     <scripts />
@@ -306,7 +312,7 @@ The intensity graph skips the value that are not displayed, so the load is expec
     <draw_legend>true</draw_legend>
     <data_formula>=pv(concat("sim://", 'loc://${DID}_type', "2DWaveform(", toString('loc://${DID}_period'), ",", toString('loc://${DID}_wavelength'),",", toString('loc://${DID}_angle'), ",", toString('loc://${DID}_width'), ",", toString('loc://${DID}_height'), ",", toString('loc://${DID}_rate'), ")"))</data_formula>
     <rules />
-    <configurable>false</configurable>
+    <configurable>true</configurable>
     <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
