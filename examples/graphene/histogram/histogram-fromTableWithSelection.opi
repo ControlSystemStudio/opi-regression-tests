@@ -233,7 +233,13 @@ $(pv_value)</tooltip>
     <x>18</x>
   </widget>
   <widget typeId="org.csstudio.graphene.opiwidgets.HistogramGraph2D" version="1.0.0">
+    <y_axis_range>
+      <axisRange type="display" />
+    </y_axis_range>
     <visible>true</visible>
+    <x_axis_range>
+      <axisRange type="display" />
+    </x_axis_range>
     <wuid>-48b126dd:14640623fd7:-7ed7</wuid>
     <scripts />
     <height>247</height>
